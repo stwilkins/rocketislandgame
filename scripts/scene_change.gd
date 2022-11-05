@@ -16,11 +16,35 @@ func _ready():
 	Events.connect("change_the_scene", self, "_on_f_btn_pressed")
 # warning-ignore:return_value_discarded
 	Events.connect("change_the_scene_left", self, "_on_l_btn_pressed")
+	
+func load_scene_prop_library(new_scene):
+	"""
+	import library(?)
+	take new_scene, look in library, find properties from library
+	
+	return new_properties array
+	
+	import scene_library
+	new_prop = scene_library[new_scene]
+	asdfgh = new_prop
 
+	"""
 	
 func _on_f_btn_pressed(new_scene) -> void:
 	# when forward button is pressed 
 	print("*Signals connected AF! \n ------------------ \n Scene to Compare to: ", new_scene, "\n Current Scene: ", current_scene, "\n ------------------ \n")
+#
+#	funkyfunker(new_scene)
+#	second_funk(properties_from_librayy) --> 
+#
+	"""
+	
+	<global variable File name>.go_get_properties(new_scene) #this function calls to another script to load in the scene properties library
+	
+	load_properties(properties)  # this function takes the properties from the new scene library and loads them into the six button nodes
+	
+	
+	"""
 	
 	if new_scene == $bridgef1: 
 		add_new_scene(bridgef2)

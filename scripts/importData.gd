@@ -9,7 +9,8 @@ func _ready():
 	var scene_data_json = JSON.parse(scene_data_file.get_as_text())
 	scene_data_file.close()
 	scene_data = scene_data_json.result
-#	print(scene_data)
+	print(scene_data)
 
 func _on_f_btn_change_scene():
-	print("button was pressed")
+	pass
+#print("button was pressed")

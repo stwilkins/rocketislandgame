@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.490196, 0.0666667, 0.215686, 0.0784314 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.121569, 0.0196078, 0.0509804, 0 )
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0.819608, 0.14902, 0.14902, 0.184314 )
+
+[node name="l_btn" type="Button"]
+margin_right = 333.0
+margin_bottom = 325.0
+custom_styles/hover = SubResource( 2 )
+custom_styles/pressed = SubResource( 3 )
+custom_styles/normal = SubResource( 1 )
+text = "left"

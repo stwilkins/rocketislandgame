@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/bridgef1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scripts/scene_change.gd" type="Script" id=5]
+
+[node name="GameManager" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="bridgef1" parent="." instance=ExtResource( 1 )]
